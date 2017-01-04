@@ -1,16 +1,1 @@
-a {
-  color: red;
-}
-body {
-  color: black;
-}
-body .class1 {
-  color: blue;
-  width: 5px;
-  height: 10px;
-}
-body .class2 {
-  background-color: green;
-  width: 100px;
-  height: 200px;
-}
+a{color:red;background-color:#0f2}body{color:black}body .class1{color:blue;width:5px;height:10px}body .class2{background-color:green;width:100px;height:200px}
