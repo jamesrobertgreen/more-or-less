@@ -1,10 +1,25 @@
-@text-col: red;
-@body-col: black;
-
-a{ color: @text-col;
-
+@text-colour: red;
+@body-text-colour: black;
+@body-bg-colour: white;
+@body-class1-colour: blue;
+@body-class2-bg-colour: green;
+a {
+    color: @text-colour;
 }
 
-body{ color: @body-col;
+body {
+    color: @body-text-colour;
+    .class1 {
+        color: @body-class1-colour;
+        .mixin1();
+    }
+    .class2 {
+        background-color: @body-class2-bg-colour;
+        .mixin1(100px, 200px);
+    }
+}
 
+.mixin1(@x: 5px, @y: 10px) {
+    width: @x;
+    height: @y;
 }
